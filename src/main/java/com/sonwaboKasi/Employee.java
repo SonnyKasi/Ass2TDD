@@ -1,6 +1,7 @@
 package com.sonwaboKasi;
 
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 public class Employee {
     private String EmpName;
@@ -16,6 +17,34 @@ public class Employee {
         this.EmpSurnm = empSurnm;
         this.EmpNum = empNum;
     }
+
+    public String getEmpName() {
+        return EmpName;
+    }
+
+
+    public void setEmpName(String empName) {
+        EmpName = empName;
+    }
+
+    public String getEmpSurnm() {
+        return EmpSurnm;
+    }
+
+    public void setEmpSurnm(String empSurnm) {
+        EmpSurnm = empSurnm;
+    }
+
+    public int getEmpNum() {
+        System.out.println("The employee is new");
+
+        return EmpNum;
+    }
+
+    public void setEmpNum(int empNum) {
+        EmpNum = empNum;
+    }
+
 
 
     @Override
